@@ -18,7 +18,7 @@ class User {
 
 
     //GETTER : DATA DI SCADENZA DELLA CARTA
-    public function getCardExpire($_cardExpiration) {
+    public function getCardExpiretion($_cardExpiration) {
         $this->cardExpiration = $_cardExpiration;
     }
 
@@ -35,7 +35,7 @@ class User {
 
     //METODO : DIRITTO DI SCONTO O NO?
     public function setDiscount() {
-        if ($this->registration == true) {
+        if ($this->registered == true) {
             $this->discount = 20;
             echo ("<p>Sei registrato!! Hai uno sconto del 20% su tutti i prodotti!</p>");
         } else {
